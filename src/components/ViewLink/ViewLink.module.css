@@ -1,0 +1,41 @@
+.container {
+  position: relative;
+  color: var(--color-white);
+  font-size: 32px;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  display: inline-block;
+}
+
+.container::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -7px;
+  width: 100%;
+  height: 5px;
+  background: var(--color-white);
+  border-radius: var(--spacing-s);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: var(--transition);
+}
+
+@media (hover: hover) {
+  .container:hover::after {
+    transform: scaleX(1);
+  }
+}
+
+@media (hover: none) {
+  .container:active::after {
+    transform: scaleX(1);
+  }
+}
+
+@media (max-width: 500px) {
+  .container {
+    font-size: 24px;
+  }
+}
