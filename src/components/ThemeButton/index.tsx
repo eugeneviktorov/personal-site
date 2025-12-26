@@ -42,8 +42,6 @@ export const ThemeButton: FC = () => {
     } else {
       saveTheme(newTheme);
     }
-    setTheme(newTheme);
-    setDocumentTheme(newTheme);
     window.location.reload();
   };
 
