@@ -1,0 +1,29 @@
+.iconButton svg {
+  width: 20px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  fill: var(--color-content);
+  transition: var(--transition);
+}
+
+:root[data-theme="dark"] .iconButton svg {
+  fill: var(--color-white);
+}
+
+.iconButton[data-no-hover="true"] svg {
+  transition: none;
+}
+
+@media (hover: hover) {
+  .iconButton:not([data-no-hover="true"]):not(:disabled):hover svg {
+    fill: var(--color-white);
+  }
+}
+
+@media (hover: none) {
+  .iconButton:not([data-no-hover="true"]):not(:disabled):active svg {
+    fill: var(--color-white);
+  }
+}

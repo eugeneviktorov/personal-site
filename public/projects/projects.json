@@ -1,0 +1,119 @@
+[
+  {
+    "id": 1,
+    "title": "MiroCopy",
+    "description": "Приложение для копирования файлов",
+    "image": "MiroCopy.png",
+    "link": "https://mirocopy.ru",
+    "favorite": true,
+    "working": false
+  },
+  {
+    "id": 2,
+    "title": "Gmeteos",
+    "description": "Прогноз погоды по городам",
+    "image": "Gmeteos.png",
+    "link": "https://gmeteos.com",
+    "favorite": true,
+    "working": false
+  },
+  {
+    "id": 3,
+    "title": "Промо-инфометеос",
+    "description": "Рекламный лендинг компании",
+    "image": "Infometeos.png",
+    "link": "https://promo.info-meteos.ru/",
+    "favorite": true,
+    "working": false
+  },
+  {
+    "id": 4,
+    "title": "Госаптека55",
+    "description": "Приложение сети аптек",
+    "image": "Gosapteka55.png",
+    "link": "https://xn--55-6kcann9a3aksn.xn--p1ai/app.htm",
+    "favorite": true,
+    "working": false
+  },
+  {
+    "id": 5,
+    "title": "ИТ Адаптация",
+    "description": "Лендинг ИТ компании",
+    "image": "IT-Adaptation.png",
+    "link": "https://it-adapt.ru",
+    "favorite": false,
+    "working": false
+  },
+  {
+    "id": 6,
+    "title": "pwa-on-nextjs-template",
+    "description": "PWA шаблон для сайта",
+    "image": "PWA-Template.png",
+    "link": "https://github.com/eugeneviktorov/pwa-on-nextjs-template",
+    "favorite": false,
+    "working": false
+  },
+  {
+    "id": 7,
+    "title": "WINSOYP",
+    "description": "Программа очистки Windows",
+    "image": "WINSOYP.png",
+    "link": "https://github.com/eugeneviktorov/WINSOYP",
+    "favorite": false,
+    "working": false
+  },
+  {
+    "id": 8,
+    "title": "СРШБ бот",
+    "description": "Telegram bot для колледжа",
+    "image": "SRSHB_bot.png",
+    "link": "https://t.me/srshb_bot",
+    "favorite": false,
+    "working": true
+  },
+  {
+    "id": 9,
+    "title": "ShortStory",
+    "description": "Telegram bot коротких историй",
+    "image": "ShortStory.png",
+    "link": "https://t.me/ShortStoryyBot",
+    "favorite": false,
+    "working": true
+  },
+  {
+    "id": 10,
+    "title": "N-Logo",
+    "description": "Логитип буквы N",
+    "image": "N-Logo.png",
+    "link": "https://www.figma.com/community/file/1154827765025781172/n-logo",
+    "favorite": false,
+    "working": false
+  },
+  {
+    "id": 11,
+    "title": "Hackathon School",
+    "description": "Макет сайта, справочник",
+    "image": "Hackathon-School.png",
+    "link": "https://www.figma.com/community/file/1166069552938719525",
+    "favorite": false,
+    "working": false
+  },
+  {
+    "id": 12,
+    "title": "Music service",
+    "description": "Макет мобильного приложения",
+    "image": "Music-service.png",
+    "link": "https://www.figma.com/community/file/1113393200185818580/Music-service",
+    "favorite": false,
+    "working": false
+  },
+  {
+    "id": 13,
+    "title": "DirectDost",
+    "description": "Приложение для университета",
+    "image": "DirectDost.png",
+    "link": "https://github.com/eugeneviktorov/DirectDost",
+    "favorite": false,
+    "working": false
+  }
+]

@@ -1,0 +1,33 @@
+.container {
+  min-width: fit-content;
+  background: var(--container-secondary);
+  box-shadow: var(--shadow);
+  padding: var(--spacing-l);
+  border-radius: var(--spacing-l);
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  gap: var(--spacing-m);
+}
+
+.titlesContainer {
+  display: flex;
+  flex-direction: column;
+}
+
+.title,
+.description {
+  width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.title {
+  color: var(--text);
+  font-size: 18px;
+}
+
+.description {
+  color: var(--color-gray);
+}

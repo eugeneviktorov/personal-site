@@ -1,0 +1,22 @@
+.container {
+  width: 100%;
+  background: var(--container-primary);
+  box-shadow: var(--shadow);
+  padding: var(--spacing-m) var(--spacing-l) var(--spacing-l) var(--spacing-l);
+  border-radius: var(--spacing-xl);
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-m);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--spacing-l);
+}
+
+@media (max-width: 700px) {
+  .grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}

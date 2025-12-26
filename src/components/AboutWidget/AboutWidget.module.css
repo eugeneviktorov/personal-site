@@ -1,0 +1,25 @@
+.container {
+  width: 100%;
+  background: var(--container-primary);
+  box-shadow: var(--shadow);
+  padding: var(--spacing-s) var(--spacing-l) var(--spacing-l) var(--spacing-l);
+  border-radius: var(--spacing-xl);
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-m);
+}
+
+.description {
+  color: var(--color-gray);
+  font-size: 18px;
+}
+
+.button {
+  width: fit-content;
+}
+
+@media (max-width: 1200px) {
+  .description {
+    font-size: 16px;
+  }
+}

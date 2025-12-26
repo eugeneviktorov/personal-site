@@ -1,0 +1,60 @@
+.container {
+  color: var(--color-content);
+  background: var(--color-background);
+  box-shadow: var(--shadow);
+  border-radius: var(--spacing-m);
+  padding: var(--spacing-m);
+  font-family: var(--font-family-main);
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: var(--transition);
+  border: none;
+  outline: none;
+  fill: var(--color-content);
+}
+
+.primary {
+  --color-background: var(--color-main);
+  --color-content: var(--color-white);
+}
+
+.secondary {
+  --color-background: var(--container-tertiary);
+  --color-content: var(--color-main);
+}
+
+.container[data-no-hover="true"] {
+  transition: none;
+  cursor: default;
+}
+
+.container:disabled {
+  cursor: not-allowed;
+}
+
+@media (hover: hover) {
+  .container.primary:not([data-no-hover="true"]):hover {
+    --color-background: var(--container-tertiary);
+    --color-content: var(--color-main);
+  }
+
+  .container.secondary:not([data-no-hover="true"]):hover {
+    --color-background: var(--color-main);
+    --color-content: var(--color-white);
+  }
+}
+
+@media (hover: none) {
+  .container.primary:not([data-no-hover="true"]):active {
+    --color-background: var(--container-tertiary);
+    --color-content: var(--color-main);
+  }
+
+  .container.secondary:not([data-no-hover="true"]):active {
+    --color-background: var(--color-main);
+    --color-content: var(--color-white);
+  }
+}
