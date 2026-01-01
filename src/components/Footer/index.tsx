@@ -31,7 +31,7 @@ export const Footer: FC = () => {
         </div>
         <div className={styles.quaternaryColumn}>
           <div className={styles.title}>Правовое</div>
-          <div className={styles.description}>viktorovvv.ru, 2025</div>
+          <div className={styles.description}>viktorovvv.ru, 2024-2026</div>
           <div className={styles.description}>© Все права защищены</div>
         </div>
       </div>
