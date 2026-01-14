@@ -7,7 +7,7 @@ import { Button } from "@app/ui/Button";
 import { ButtonKind } from "@app/ui/Button/Button.types";
 import { useSendFeedbackMutation } from "@app/api/feedbackApi";
 import { IconButton } from "@app/ui/IconButton";
-import { XmarkIcon } from "@app/ui/icons";
+import { XmarkIcon } from "@app/ui/Icons";
 import { Link } from "react-router";
 import { IFeedbackForm } from "./FeedbackForm.types";
 

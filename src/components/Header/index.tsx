@@ -2,7 +2,7 @@ import { FC, useState } from "react";
 
 import styles from "./Header.module.css";
 import { IHeader } from "./Header.types";
-import { BarsIcon } from "@app/ui/icons";
+import { BarsIcon } from "@app/ui/Icons";
 import { Button } from "@app/ui/Button";
 import { ButtonKind } from "@app/ui/Button/Button.types";
 import { useNavigate } from "react-router";
@@ -20,7 +20,7 @@ export const Header: FC<IHeader> = ({ main, back }) => {
   const isHistory = window.history.length > 2;
 
   const buttonMain = (
-    <LinkButton header to="/">
+    <LinkButton header to="/" className={styles.button}>
       Главная
     </LinkButton>
   );
@@ -30,7 +30,7 @@ export const Header: FC<IHeader> = ({ main, back }) => {
       {main && (
         <>
           {buttonMain}
-          <LinkButton header to="/projects">
+          <LinkButton header to="/projects" className={styles.button}>
             Проекты
           </LinkButton>
           <ThemeButton />
@@ -39,11 +39,11 @@ export const Header: FC<IHeader> = ({ main, back }) => {
       {back && (
         <>
           {isHistory ? (
-            <Button kind={ButtonKind.PRIMARY} onClick={() => navigate(-1)}>
+            <Button kind={ButtonKind.PRIMARY} onClick={() => navigate(-1)} className={styles.button}>
               ← Назад
             </Button>
           ) : (
-            <LinkButton header to="/">
+            <LinkButton header to="/" className={styles.button}>
               ← Назад
             </LinkButton>
           )}

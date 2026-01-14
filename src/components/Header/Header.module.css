@@ -23,8 +23,12 @@
   }
 
   .content {
-    width: 150px;
     flex-direction: column;
+    align-items: center;
     gap: var(--spacing-xl);
+  }
+
+  .button {
+    width: 170px;
   }
 }

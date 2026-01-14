@@ -1,5 +1,5 @@
 import { useIsMobileQuery } from "@app/hooks/useIsMobileQuery";
-import { Logotype, LogotypeIcon } from "@app/ui/icons";
+import { Logotype, LogotypeIcon } from "@app/ui/Icons";
 import { FC } from "react";
 import { Link } from "react-router";
 

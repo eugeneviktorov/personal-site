@@ -1,6 +1,6 @@
 import { FC } from "react";
 import styles from "./AnimationElement.module.css";
-import { WorkIcon } from "@app/ui/icons";
+import { WorkIcon } from "@app/ui/Icons";
 
 export const AnimationElement: FC = () => {
   return (

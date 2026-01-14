@@ -2,7 +2,7 @@ import { FC, useEffect, useRef } from "react";
 import styles from "./ClientsWidget.module.css";
 import { TitleWidget } from "../TitleWidget";
 import { ClientItem } from "./components/ClientItem";
-import { CarIcon, CollegeIcon, DevIcon, WeatherIcon } from "@app/ui/icons";
+import { CarIcon, CollegeIcon, DevIcon, WeatherIcon } from "@app/ui/Icons";
 import { IconButton } from "@app/ui/IconButton";
 
 export const ClientsWidget: FC = () => {

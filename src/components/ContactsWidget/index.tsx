@@ -3,7 +3,7 @@ import { TitleWidget } from "../TitleWidget";
 import styles from "./ContactsWidget.module.css";
 import { ContactItem } from "./components/ContactItem";
 import { IconButton } from "@app/ui/IconButton";
-import { FigmaIcon, GithubIcon, LinkedinIcon, MailIcon, UserIcon, WorkIcon } from "@app/ui/icons";
+import { FigmaIcon, GithubIcon, LinkedinIcon, MailIcon, UserIcon, WorkIcon } from "@app/ui/Icons";
 
 export const ContactsWidget: FC = () => {
   return (

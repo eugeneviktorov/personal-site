@@ -1,10 +1,18 @@
-import { FC, useEffect, useState } from "react";
-import { Theme } from "./ThemeButton.types";
-import { getSavedTheme, saveTheme } from "@app/utils/localStorage";
+import { useIsMobileQuery } from "@app/hooks/useIsMobileQuery";
+import { Button } from "@app/ui/Button";
+import { ButtonKind } from "@app/ui/Button/Button.types";
 import { IconButton } from "@app/ui/IconButton";
-import { MoonIcon, SunIcon, SystemIcon } from "@app/ui/icons";
+import { BrushIcon } from "@app/ui/Icons";
+import { getSavedTheme, saveTheme } from "@app/utils/localStorage";
+import { useEffect, useState } from "react";
+import styles from "./ThemeButton.module.css";
+import { Theme } from "./ThemeButton.types";
+import { ThemeSuggestions } from "../ThemeSuggestions";
 
-export const ThemeButton: FC = () => {
+export const ThemeButton = () => {
+  const isMobile = useIsMobileQuery();
+
+  const [isThemes, setThemes] = useState(false);
   const [theme, setTheme] = useState<Theme>(Theme.SYSTEM);
 
   const setDocumentTheme = (theme: Theme) => {
@@ -42,35 +50,23 @@ export const ThemeButton: FC = () => {
     } else {
       saveTheme(newTheme);
     }
-    window.location.reload();
+    setTheme(newTheme);
+    setDocumentTheme(newTheme);
   };
 
-  const getIcon = () => {
-    switch (theme) {
-      case Theme.LIGHT:
-        return <SunIcon />;
-      case Theme.DARK:
-        return <MoonIcon />;
-      case Theme.SYSTEM:
-        return <SystemIcon />;
-    }
-  };
-
-  const getTitle = () => {
-    switch (theme) {
-      case Theme.LIGHT:
-        return "Светлая тема";
-      case Theme.DARK:
-        return "Тёмная тема";
-      case Theme.SYSTEM:
-        return "Системная тема";
-    }
-  };
-
-  const handleChange = () => {
-    const nextTheme = theme === Theme.LIGHT ? Theme.DARK : theme === Theme.DARK ? Theme.SYSTEM : Theme.LIGHT;
-    applyTheme(nextTheme);
-  };
-
-  return <IconButton title={getTitle()} icon={getIcon()} onClick={handleChange} />;
+  return (
+    <>
+      {isMobile ? (
+        <Button kind={ButtonKind.SECONDARY} onClick={() => setThemes(true)} className={styles.button}>
+          <BrushIcon width={12} />
+          Тема системы
+        </Button>
+      ) : (
+        <IconButton onClick={() => setThemes(true)} icon={<BrushIcon />} title="Тема системы" />
+      )}
+      {isThemes && (
+        <ThemeSuggestions onClose={() => setThemes(false)} onThemeChange={applyTheme} currentTheme={theme} />
+      )}
+    </>
+  );
 };

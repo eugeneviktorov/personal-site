@@ -1,5 +1,5 @@
 import { IconButton } from "@app/ui/IconButton";
-import { XmarkIcon } from "@app/ui/icons";
+import { XmarkIcon } from "@app/ui/Icons";
 import { classNames } from "@app/utils/classNames";
 import { FC } from "react";
 import { IMenuMobile } from "./MenuMobile.types";
