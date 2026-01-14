@@ -10,7 +10,7 @@ import { LinkButton } from "@app/ui/LinkButton";
 import { useIsMobileQuery } from "@app/hooks/useIsMobileQuery";
 import { IconButton } from "@app/ui/IconButton";
 import { MenuMobile } from "./components/MenuMobile";
-import { ThemeButton } from "../ThemeButton";
+import { ThemeButton } from "./components/ThemeButton";
 import { LogotypeLink } from "./components/LogotypeLink";
 
 export const Header: FC<IHeader> = ({ main, back }) => {

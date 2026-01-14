@@ -4,7 +4,7 @@ import styles from "./PageWrapper.module.css";
 import { IPageWrapper } from "./PageWrapper.types";
 import { Header } from "../Header";
 import { Footer } from "../Footer";
-import { Title } from "../Title";
+import { Title } from "./components/Title";
 
 export const PageWrapper: FC<IPageWrapper> = ({ title, headerMain, headerBack, children }) => {
   return (

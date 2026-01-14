@@ -1,4 +1,4 @@
-import { DesignConceptWidget } from "@app/components/DesignConceptWidget";
+import { DesignConceptWidget } from "@app/pages/DesignConceptPage/components/DesignConceptWidget";
 import { PageWrapper } from "@app/components/PageWrapper";
 import type { FC } from "react";
 

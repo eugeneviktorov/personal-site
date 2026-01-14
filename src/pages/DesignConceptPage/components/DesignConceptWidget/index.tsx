@@ -1,6 +1,6 @@
 import { FC } from "react";
 import styles from "./DesignConceptWidget.module.css";
-import { TitleWidget } from "../TitleWidget";
+import { TitleWidget } from "../../../../components/TitleWidget";
 import { LinkButton } from "@app/ui/LinkButton";
 import { ButtonKind } from "@app/ui/Button/Button.types";
 import { IDesignConceptWidget } from "./DesignConceptWidget.types";

@@ -1,6 +1,6 @@
 import { FC } from "react";
 import styles from "./FeedbackWidget.module.css";
-import { TitleWidget } from "../TitleWidget";
+import { TitleWidget } from "../../../../components/TitleWidget";
 import { FeedbackForm } from "./components/FeedbackForm";
 import { AnimationElement } from "./components/AnimationElement";
 import { useIsMobileQuery } from "@app/hooks/useIsMobileQuery";

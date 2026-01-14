@@ -1,4 +1,4 @@
-import { Theme } from "@app/components/ThemeButton/ThemeButton.types";
+import { Theme } from "@app/components/Header/components/ThemeButton/ThemeButton.types";
 import { getSavedTheme } from "@app/utils/localStorage";
 import { useState, useEffect } from "react";
 

@@ -1,4 +1,4 @@
-import { Theme } from "@app/components/ThemeButton/ThemeButton.types";
+import { Theme } from "@app/components/Header/components/ThemeButton/ThemeButton.types";
 
 // Загружает тему системы
 const THEME_KEY = "theme";

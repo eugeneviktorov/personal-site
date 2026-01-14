@@ -3,7 +3,7 @@ import styles from "./DirectionsWidget.module.css";
 import { IconButton } from "@app/ui/IconButton";
 import { BrushIcon, DevIcon, InternetIcon, MobileIcon } from "@app/ui/Icons";
 import { CategoryItem } from "./components/CategoryItem";
-import { TitleWidget } from "../TitleWidget";
+import { TitleWidget } from "../../../../components/TitleWidget";
 
 export const DirectionsWidget: FC = () => {
   return (

@@ -1,5 +1,5 @@
 import { FC } from "react";
-import { TitleWidget } from "../TitleWidget";
+import { TitleWidget } from "../../../../components/TitleWidget";
 import styles from "./ContactsWidget.module.css";
 import { ContactItem } from "./components/ContactItem";
 import { IconButton } from "@app/ui/IconButton";
