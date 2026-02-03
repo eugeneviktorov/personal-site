@@ -5,7 +5,7 @@
   border-radius: var(--spacing-m);
   padding: var(--spacing-m);
   font-family: var(--font-family-main);
-  font-size: 16px;
+  font-size: var(--fs-sm);
   display: flex;
   align-items: center;
   justify-content: center;

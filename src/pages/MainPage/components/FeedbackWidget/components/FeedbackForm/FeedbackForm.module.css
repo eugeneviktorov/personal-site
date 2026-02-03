@@ -20,7 +20,7 @@
   align-items: center;
   gap: var(--spacing-m);
   font-family: var(--font-family-main);
-  font-size: 16px;
+  font-size: var(--fs-sm);
 }
 
 .textarea.disabled {
@@ -40,7 +40,6 @@
 }
 
 .clue {
-  font-size: 14px;
   color: var(--color-gray);
 }
 
@@ -63,7 +62,7 @@
 }
 
 .titleError {
-  font-size: 18px;
+  font-size: var(--fs-md);
 }
 
 .contentError {

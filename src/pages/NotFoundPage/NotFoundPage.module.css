@@ -19,12 +19,12 @@
 
 .title {
   color: var(--color-main);
-  font-size: 68px;
+  font-size: var(--fs-xl);
   text-align: center;
 }
 
 .description {
   color: var(--color-gray);
-  font-size: 29px;
+  font-size: var(--fs-md);
   text-align: center;
 }

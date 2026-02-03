@@ -35,7 +35,7 @@
 }
 
 .title {
-  font-size: 18px;
+  font-size: var(--fs-md);
   color: var(--text);
 }
 
@@ -65,6 +65,6 @@
   }
 
   .title {
-    font-size: 20px;
+    font-size: var(--fs-lg);
   }
 }

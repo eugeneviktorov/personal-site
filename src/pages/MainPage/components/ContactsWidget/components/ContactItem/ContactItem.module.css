@@ -14,12 +14,12 @@
 
 .title {
   color: var(--text);
-  font-size: 18px;
+  font-size: var(--fs-md);
 }
 
 .link {
   width: fit-content;
-  font-size: 18px;
+  font-size: var(--fs-md);
   text-decoration: none;
   transition: transform 0.2s ease;
 }

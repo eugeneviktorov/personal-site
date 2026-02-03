@@ -40,7 +40,7 @@
 
 .workingTitle {
   width: 90%;
-  font-size: 24px;
+  font-size: var(--fs-lg);
   text-align: center;
   color: var(--color-white);
 }
@@ -55,8 +55,7 @@
 
 .title {
   width: fit-content;
-  /* -webkit-tap-highlight-color: transparent; */
-  font-size: 20px;
+  font-size: var(--fs-lg);
 }
 
 .description {

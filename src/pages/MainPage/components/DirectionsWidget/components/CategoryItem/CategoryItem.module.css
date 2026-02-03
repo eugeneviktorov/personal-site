@@ -27,7 +27,7 @@
 
 .title {
   color: var(--text);
-  font-size: 18px;
+  font-size: var(--fs-md);
 }
 
 .description {

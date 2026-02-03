@@ -23,7 +23,7 @@
   color: var(--text);
   background: var(--container-secondary);
   font-family: var(--font-family-main);
-  font-size: 16px;
+  font-size: var(--fs-sm);
   border: none;
   outline: none;
   flex: 1;
