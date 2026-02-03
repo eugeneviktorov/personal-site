@@ -1,8 +1,9 @@
-import { FC } from "react";
-import { IInput } from "./Input.types";
 import { classNames } from "@app/utils/classNames";
-import styles from "./Input.module.css";
 import { InputMask } from "@react-input/mask";
+import { FC } from "react";
+
+import styles from "./Input.module.css";
+import { IInput } from "./Input.types";
 
 export const Input: FC<IInput> = ({
   value,

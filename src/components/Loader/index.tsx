@@ -1,4 +1,5 @@
 import { FC, useEffect, useState } from "react";
+
 import styles from "./Loader.module.css";
 
 export const Loader: FC = () => {

@@ -5,6 +5,7 @@ import { IconButton } from "@app/ui/IconButton";
 import { BrushIcon } from "@app/ui/Icons";
 import { getSavedTheme, saveTheme } from "@app/utils/localStorage";
 import { useEffect, useState } from "react";
+
 import styles from "./ThemeButton.module.css";
 import { Theme } from "./ThemeButton.types";
 import { ThemeSuggestions } from "../ThemeSuggestions";

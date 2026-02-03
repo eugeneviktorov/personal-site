@@ -1,17 +1,17 @@
-import { FC, useState } from "react";
-
-import styles from "./Header.module.css";
-import { IHeader } from "./Header.types";
-import { BarsIcon } from "@app/ui/Icons";
+import { useIsMobileQuery } from "@app/hooks/useIsMobileQuery";
 import { Button } from "@app/ui/Button";
 import { ButtonKind } from "@app/ui/Button/Button.types";
-import { useNavigate } from "react-router";
-import { LinkButton } from "@app/ui/LinkButton";
-import { useIsMobileQuery } from "@app/hooks/useIsMobileQuery";
 import { IconButton } from "@app/ui/IconButton";
+import { BarsIcon } from "@app/ui/Icons";
+import { LinkButton } from "@app/ui/LinkButton";
+import { FC, useState } from "react";
+import { useNavigate } from "react-router";
+
+import { LogotypeLink } from "./components/LogotypeLink";
 import { MenuMobile } from "./components/MenuMobile";
 import { ThemeButton } from "./components/ThemeButton";
-import { LogotypeLink } from "./components/LogotypeLink";
+import styles from "./Header.module.css";
+import { IHeader } from "./Header.types";
 
 export const Header: FC<IHeader> = ({ main, back }) => {
   const isMobile = useIsMobileQuery();

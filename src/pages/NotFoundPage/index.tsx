@@ -1,8 +1,9 @@
 import { PageWrapper } from "@app/components/PageWrapper";
-import type { FC } from "react";
-import styles from "./NotFoundPage.module.css";
-import { LinkButton } from "@app/ui/LinkButton";
 import { ButtonKind } from "@app/ui/Button/Button.types";
+import { LinkButton } from "@app/ui/LinkButton";
+import type { FC } from "react";
+
+import styles from "./NotFoundPage.module.css";
 
 export const NotFoundPage: FC = () => {
   return (

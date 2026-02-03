@@ -1,4 +1,5 @@
 import { FC } from "react";
+
 import styles from "./DocumentationStyle.module.css";
 import { IDocumentationStyle } from "./DocumentationStyle.types";
 

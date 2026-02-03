@@ -1,13 +1,13 @@
-import type { FC } from "react";
-import styles from "./ProjectWidget.module.css";
-import { TitleWidget } from "../TitleWidget";
-import { IItem } from "./components/ProjectItem/ProjectItem.types";
-
-import projectsData from "../../../public/projects/projects.json";
-import { ProjectItem } from "./components/ProjectItem";
-import { IProjectWidget } from "./ProjectWidget.types";
 import { ButtonKind } from "@app/ui/Button/Button.types";
 import { LinkButton } from "@app/ui/LinkButton";
+import type { FC } from "react";
+
+import { ProjectItem } from "./components/ProjectItem";
+import { IItem } from "./components/ProjectItem/ProjectItem.types";
+import styles from "./ProjectWidget.module.css";
+import { IProjectWidget } from "./ProjectWidget.types";
+import projectsData from "../../../public/projects/projects.json";
+import { TitleWidget } from "../TitleWidget";
 
 export const ProjectWidget: FC<IProjectWidget> = ({ favorite }) => {
   const projectItem: IItem[] = projectsData;

@@ -1,9 +1,10 @@
-import { FC } from "react";
-import styles from "./DirectionsWidget.module.css";
+import { TitleWidget } from "@app/components/TitleWidget";
 import { IconButton } from "@app/ui/IconButton";
 import { BrushIcon, DevIcon, InternetIcon, MobileIcon } from "@app/ui/Icons";
+import { FC } from "react";
+
 import { CategoryItem } from "./components/CategoryItem";
-import { TitleWidget } from "../../../../components/TitleWidget";
+import styles from "./DirectionsWidget.module.css";
 
 export const DirectionsWidget: FC = () => {
   return (

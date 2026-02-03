@@ -1,8 +1,9 @@
-import { FC } from "react";
-import styles from "./DesignConceptWidget.module.css";
-import { TitleWidget } from "../../../../components/TitleWidget";
-import { LinkButton } from "@app/ui/LinkButton";
+import { TitleWidget } from "@app/components/TitleWidget";
 import { ButtonKind } from "@app/ui/Button/Button.types";
+import { LinkButton } from "@app/ui/LinkButton";
+import { FC } from "react";
+
+import styles from "./DesignConceptWidget.module.css";
 import { IDesignConceptWidget } from "./DesignConceptWidget.types";
 
 export const DesignConceptWidget: FC<IDesignConceptWidget> = ({ isSmall }) => {

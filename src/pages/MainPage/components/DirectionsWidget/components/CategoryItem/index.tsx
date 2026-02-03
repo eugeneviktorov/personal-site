@@ -1,4 +1,5 @@
 import { FC } from "react";
+
 import styles from "./CategoryItem.module.css";
 import { ICategoryItem } from "./CategoryItem.types";
 

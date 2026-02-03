@@ -1,4 +1,5 @@
 import { FC } from "react";
+
 import styles from "./AboutWidget.module.css";
 import { AboutTitle } from "./components/AboutTitle";
 

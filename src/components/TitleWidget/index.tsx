@@ -1,4 +1,5 @@
 import { FC } from "react";
+
 import styles from "./TitleWidget.module.css";
 import { ITitleWidget } from "./TitleWidget.types";
 

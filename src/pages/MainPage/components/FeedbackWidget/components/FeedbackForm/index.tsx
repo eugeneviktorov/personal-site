@@ -1,14 +1,15 @@
-import { FC, FormEvent, useState } from "react";
-import styles from "./FeedbackForm.module.css";
+import { useSendFeedbackMutation } from "@app/api/feedbackApi";
+import { Button } from "@app/ui/Button";
+import { ButtonKind } from "@app/ui/Button/Button.types";
+import { IconButton } from "@app/ui/IconButton";
+import { XmarkIcon } from "@app/ui/Icons";
 import { Input } from "@app/ui/Input";
 import { InputMode } from "@app/ui/Input/Input.types";
 import { classNames } from "@app/utils/classNames";
-import { Button } from "@app/ui/Button";
-import { ButtonKind } from "@app/ui/Button/Button.types";
-import { useSendFeedbackMutation } from "@app/api/feedbackApi";
-import { IconButton } from "@app/ui/IconButton";
-import { XmarkIcon } from "@app/ui/Icons";
+import { FC, FormEvent, useState } from "react";
 import { Link } from "react-router";
+
+import styles from "./FeedbackForm.module.css";
 import { IFeedbackForm } from "./FeedbackForm.types";
 
 export const FeedbackForm: FC<IFeedbackForm> = ({ disabled }) => {

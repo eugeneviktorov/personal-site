@@ -1,11 +1,12 @@
 import { Helmet } from "@dr.pogodin/react-helmet";
 import { FC } from "react";
+
 import { ITitle } from "./Title.types";
 
-export const Title: FC<ITitle> = ({ children }) => {
+export const Title: FC<ITitle> = ({ title }) => {
   return (
     <Helmet>
-      <title>Viktorov {children && ` - ${children}`}</title>
+      <title>Viktorov {title && ` - ${title}`}</title>
     </Helmet>
   );
 };

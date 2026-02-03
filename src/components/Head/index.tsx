@@ -1,7 +1,7 @@
 
-import { FC, useEffect, useState } from "react";
-import { Helmet } from "@dr.pogodin/react-helmet";
 import { useTheme } from "@app/hooks/useTheme";
+import { Helmet } from "@dr.pogodin/react-helmet";
+import { FC, useEffect, useState } from "react";
 
 export const Head: FC = () => {
   const isDark = useTheme();

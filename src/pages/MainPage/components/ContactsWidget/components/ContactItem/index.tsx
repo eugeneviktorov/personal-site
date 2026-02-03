@@ -1,4 +1,5 @@
 import { FC } from "react";
+
 import styles from "./ContactItem.module.css";
 import { IContactItem } from "./ContactItem.types";
 

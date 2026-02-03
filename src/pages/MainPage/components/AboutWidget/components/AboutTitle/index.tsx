@@ -1,4 +1,5 @@
 import { FC, useEffect, useState } from "react";
+
 import styles from "./AboutTitle.module.css";
 
 export const AboutTitle: FC = () => {
@@ -17,7 +18,7 @@ export const AboutTitle: FC = () => {
     }, 3500);
 
     return () => clearInterval(interval);
-  }, []);
+  }, [words.length]);
 
   return (
     <div className={styles.container}>

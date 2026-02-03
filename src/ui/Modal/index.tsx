@@ -1,11 +1,11 @@
 import { useEscapeKey } from "@app/hooks/useEscapeKey";
+import { useIsMobileQuery } from "@app/hooks/useIsMobileQuery";
 import { FC } from "react";
 
 import styles from "./Modal.module.css";
 import { IModal } from "./Modal.types";
 import { IconButton } from "../IconButton";
 import { XmarkIcon } from "../Icons";
-import { useIsMobileQuery } from "@app/hooks/useIsMobileQuery";
 
 export const Modal: FC<IModal> = ({ title, width, onClose, children }) => {
   const isMobile = useIsMobileQuery();

@@ -1,4 +1,5 @@
 import { FC } from "react";
+
 import styles from "./ClientItem.module.css";
 import { IClientItem } from "./ClientItem.types";
 

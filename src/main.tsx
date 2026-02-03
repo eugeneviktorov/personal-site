@@ -1,11 +1,10 @@
 import { HelmetProvider } from "@dr.pogodin/react-helmet";
-
 import { createRoot } from "react-dom/client";
+import { Provider } from "react-redux";
 
 import { App } from "./App";
 import "./globals.css";
 import { setupStore } from "./redux/store";
-import { Provider } from "react-redux";
 
 const store = setupStore();
 
@@ -14,5 +13,5 @@ createRoot(document.getElementById("root")!).render(
     <HelmetProvider>
       <App />
     </HelmetProvider>
-  </Provider>
+  </Provider>,
 );

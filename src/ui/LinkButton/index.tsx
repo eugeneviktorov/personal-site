@@ -1,9 +1,9 @@
 import { FC } from "react";
+import { useLocation, useNavigate } from "react-router";
 
 import { ILinkButton } from "./LinkButton.types";
-import { useLocation, useNavigate } from "react-router";
-import { ButtonKind } from "../Button/Button.types";
 import { Button } from "../Button";
+import { ButtonKind } from "../Button/Button.types";
 
 export const LinkButton: FC<ILinkButton> = ({ to, header, kind, className, children }) => {
   const location = useLocation();

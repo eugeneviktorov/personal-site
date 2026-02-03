@@ -1,4 +1,5 @@
 import { ReactNode } from "react";
+
 import { ButtonKind } from "../Button/Button.types";
 
 export type ILinkButton = IHeaderLinkButton | INormalLinkButton;

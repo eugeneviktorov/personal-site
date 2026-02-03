@@ -1,7 +1,8 @@
-import styles from "./IconButton.module.css";
-import { FC } from "react";
-import { IIconButton } from "./IconButton.types";
 import { classNames } from "@app/utils/classNames";
+import { FC } from "react";
+
+import styles from "./IconButton.module.css";
+import { IIconButton } from "./IconButton.types";
 import { Button } from "../Button";
 import { ButtonKind } from "../Button/Button.types";
 

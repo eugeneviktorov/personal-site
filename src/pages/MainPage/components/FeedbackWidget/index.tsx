@@ -1,9 +1,10 @@
-import { FC } from "react";
-import styles from "./FeedbackWidget.module.css";
-import { TitleWidget } from "../../../../components/TitleWidget";
-import { FeedbackForm } from "./components/FeedbackForm";
-import { AnimationElement } from "./components/AnimationElement";
+import { TitleWidget } from "@app/components/TitleWidget";
 import { useIsMobileQuery } from "@app/hooks/useIsMobileQuery";
+import { FC } from "react";
+
+import { AnimationElement } from "./components/AnimationElement";
+import { FeedbackForm } from "./components/FeedbackForm";
+import styles from "./FeedbackWidget.module.css";
 
 export const FeedbackWidget: FC = () => {
   const isMobile = useIsMobileQuery();

@@ -1,5 +1,5 @@
-import { DesignConceptWidget } from "@app/pages/DesignConceptPage/components/DesignConceptWidget";
 import { PageWrapper } from "@app/components/PageWrapper";
+import { DesignConceptWidget } from "@app/pages/DesignConceptPage/components/DesignConceptWidget";
 import type { FC } from "react";
 
 export const DesignConceptPage: FC = () => {

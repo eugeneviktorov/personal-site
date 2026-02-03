@@ -1,11 +1,12 @@
-import { FC } from "react";
-import { IProjectItem } from "./ProjectItem.types";
-import styles from "./ProjectItem.module.css";
 import { useTheme } from "@app/hooks/useTheme";
+import { FC } from "react";
+
+import styles from "./ProjectItem.module.css";
+import { IProjectItem } from "./ProjectItem.types";
 
 export const ProjectItem: FC<IProjectItem> = ({ item }) => {
   const isDark = useTheme();
-  const folder = isDark ? "dark" : "light"
+  const folder = isDark ? "dark" : "light";
 
   return (
     <a href={item.link} className={styles.container}>
