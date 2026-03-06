@@ -3,7 +3,7 @@ import { FC, useEffect, useState } from "react";
 import styles from "./AboutTitle.module.css";
 
 export const AboutTitle: FC = () => {
-  const words = ["для пользователей", "для клиентов", "для бизнеса"];
+  const words = ["для людей", "для клиентов", "для бизнеса"];
   const [index, setIndex] = useState(0);
   const [isExiting, setIsExiting] = useState(false);
 
