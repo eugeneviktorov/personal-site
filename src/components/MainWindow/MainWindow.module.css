@@ -1,0 +1,52 @@
+.container {
+  width: 400px;
+  background: var(--container);
+  border-top: 2px solid var(--white);
+  border-left: 2px solid var(--white);
+  border-right: 2px solid var(--black);
+  border-bottom: 2px solid var(--black);
+  box-shadow: 1px 1px 0px 0px var(--background);
+}
+
+.header {
+  background: linear-gradient(90deg, #000080, #1084d0);
+  padding: var(--spacing-xs) var(--spacing-s);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.barImage {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-xs);
+}
+
+.image {
+  width: 18px;
+  height: 18px;
+}
+
+.titleBar {
+  color: var(--white);
+  font-weight: bold;
+  letter-spacing: 0.5px;
+}
+
+.controls {
+  display: flex;
+  gap: var(--spacing-xs);
+}
+
+.content {
+  padding: var(--spacing-xl);
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-l);
+}
+
+@media (max-width: 500px) {
+  .container {
+    width: 100%;
+  }
+}

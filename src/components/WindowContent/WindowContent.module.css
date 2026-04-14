@@ -1,0 +1,14 @@
+.container {
+  padding: var(--spacing-l);
+  border: 2px solid var(--white);
+  border-right-color: var(--background);
+  border-bottom-color: var(--background);
+}
+
+.title {
+  position: absolute;
+  width: fit-content;
+  background: var(--container);
+  padding: 0 var(--spacing-s);
+  margin-top: -22px;
+}

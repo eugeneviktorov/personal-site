@@ -1,0 +1,32 @@
+:root {
+  /* Основные цвета */
+  --background: #808080;
+  --container: #c0c0c0;
+  --white: #ffffff;
+  --black: #000000;
+
+  /* Размеры элементов */
+  --spacing-xs: 3px;
+  --spacing-s: 5px;
+  --spacing-m: 10px;
+  --spacing-l: 15px;
+  --spacing-xl: 20px;
+  --spacing-xxl: 30px;
+  --spacing-xxxl: 70px;
+
+  /* Шрифт и настройки */
+  --font-family-main: "MS Sans Serif", "Arial", sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  outline: none;
+}
+
+body {
+  background: var(--background);
+  font-family: var(--font-family-main);
+  font-size: 12px;
+}
